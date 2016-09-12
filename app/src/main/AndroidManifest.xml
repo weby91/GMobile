@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.webster.gmobile.gmobile">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/GKRTheme">
+        <activity
+            android:name="com.webster.gmobile.activity.SignUpActivity"
+            android:label="SignUpActivity"
+            android:theme="@style/GKRTheme" />
+        <activity
+            android:name="com.webster.gmobile.activity.MainActivity"
+            android:label="MainActivity"
+            android:theme="@style/GKRTheme"></activity>
+        <activity
+            android:name="com.webster.gmobile.activity.ReadComments"
+            android:label="@string/title_activity_read_comments" />
+        <activity
+            android:name="com.webster.gmobile.activity.JadwalPelayananActivity"
+            android:label="JadwalPelayananActivity" />
+        <activity
+            android:name="com.webster.gmobile.activity.LogInPageActivity"
+            android:label="LogInPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.webster.gmobile.activity.MaintainJadwalActivity"
+            android:label="@string/title_activity_maintain_jadwal"
+            android:theme="@style/GKRTheme" />
+        <activity
+            android:name="com.webster.gmobile.activity.DetailJadwalPelayananActivity"
+            android:label="@string/title_activity_detail_jadwal_pelayanan"
+            android:theme="@style/GKRTheme" />
+        <activity
+            android:name="com.webster.gmobile.activity.UserConfirmationActivity"
+            android:label="@string/title_activity_user_confirmation"
+            android:theme="@style/GKRTheme" />
+        <activity
+            android:name="com.webster.gmobile.activity.GalleryGKRActivity"
+            android:label="@string/title_activity_gallery_gkr"
+            android:theme="@style/GKRTheme"></activity>
+        <activity
+            android:name="com.webster.gmobile.activity.GalleryDetailActivity"
+            android:label="@string/title_activity_gallery_detail"
+            android:theme="@style/GKRTheme" />
+        <activity
+            android:name="com.webster.gmobile.activity.EditJadwalPelayananActivity"
+            android:label="@string/title_activity_edit_jadwal_pelayanan"
+            android:theme="@style/GKRTheme"></activity>
+    </application>
+
+</manifest>

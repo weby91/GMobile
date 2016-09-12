@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_d28ef8bda3c80c093e88ab906ffc97d3379c8739.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.1_ded3c162ae6eaa3f4358d8f5188df3803c106ccd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.1.1_67f9a9e94cfe6394e6d04ae952ed2d319d304cb9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.1.0_654238d89a7d74abfb0d54a5e1f1d53de0733133.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AndroidStudioProjects\GMobile\app\libs\volley.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\volley_d95b880fb99fa6976c3ad7c8800359bb0397b374.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.1.0_35cf2f3be704fa83fd1b74b456b5f9f3f30a6c5e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AndroidStudioProjects\GMobile\app\libs\httpclient-4.2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="6a91a27c5c07e9da44eeddbc4206e349735b26f4">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\httpclient-4.2.3_f6709887ec309f0d04cd1f0a8d7474898bc74cc6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AndroidStudioProjects\GMobile\app\libs\httpclient-win-4.5.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="1829f9483cded887b5e7eb354d9a86e81d377962">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\httpclient-win-4.5.1_5974e554e8471f58305798337770e7e70e6fb42d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="1bb422f158d0bc9103ce95ee8d9536fa85c14ba1">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_85e8f7f99bd3bf13ed30da9bfd459e079bf94aae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.1_985bab9449f6d509e6aaf66147d993395ae4e0f0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_e8a65c303e61873cee2db78dd840161932e8596f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AndroidStudioProjects\GMobile\app\libs\httpcore-4.4.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="e876a79d561e5c6207b78d347e198c8c4531a5e5">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\httpcore-4.4.3_4a75948ffd12d2fe950141fccec336a27036112e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.3.2\d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27\picasso-2.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\picasso-2.3.2_6cb3e3cb6b7964bba1e92aa62fb22dbd8f507bf5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\exploded-aar\org.lucasr.twowayview\twowayview\0.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="f4c3a1a784563dd6f014ddf8e3a173cf3f152dd8">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\org.lucasr.twowayview-twowayview-0.1.1_0afc0a70ce27eda19c1b3ecdf7ed5162939cedf9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.1.1_b21c367342833bfe8ca3aafc3d702603254702ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\5.1.1\b3652dfd65ca0bcf18790ff1a1f7624af4cb2bb8\butterknife-5.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b3652dfd65ca0bcf18790ff1a1f7624af4cb2bb8">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\butterknife-5.1.1_a5e7a748e8c63050cd77d9dceb06b6b8f6c69774.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="4df97a564dd2473c80d2d800cc92e7c316d3a984">
+        <dex dex="C:\Users\weby\AndroidStudioProjects\GMobile\app\build\intermediates\pre-dexed\debug\instant-run_36b05ea969d7e638d76c13c84ed4c10988e18602.jar" />
+    </item>
+
+</items>

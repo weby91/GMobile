@@ -1,0 +1,110 @@
+package com.webster.gmobile.motionkit;
+
+import android.animation.Animator;
+import android.animation.Keyframe;
+import android.animation.ObjectAnimator;
+import android.content.Context;
+import android.view.animation.AnimationUtils;
+import android.view.animation.Interpolator;
+
+import com.webster.gmobile.util.Optional;
+
+import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * Created by weby on 1/2/2016.
+ */
+public class MotionKit {
+    private static double sSpeed = 1;
+
+    public synchronized static void setGlobalSpeed(double speed) {
+        sSpeed = speed;
+    }
+
+    static synchronized long computeDuration(long duration1x) {
+        return (long) (duration1x * 1 / sSpeed);
+    }
+
+    public static MirrorAnimator together(List<MirrorAnimator> animators) {
+        return new MirrorAnimatorSet(animators,
+                MirrorAnimatorSet.Ordering.Together);
+    }
+
+    public static MirrorAnimator together(MirrorAnimator... animators) {
+        return together(Arrays.asList(animators));
+    }
+
+    public static MirrorAnimator sequence(List<MirrorAnimator> animators) {
+        return new MirrorAnimatorSet(animators,
+                MirrorAnimatorSet.Ordering.Sequentially);
+    }
+
+    public static MirrorAnimator sequence(MirrorAnimator... animators) {
+        return sequence(Arrays.asList(animators));
+    }
+
+    /**
+     *
+     * @param target the target object to be animated
+     * @param property the property to be animated
+     * @param values values to be animated on
+     * @return a MirrorAnimator initialized with the "int" setter of the property if the setter exists,
+     *  otherwise, it'll try to find the "float" setter and return a MirrorAnimator based on it.
+     * @throws java.lang.IllegalArgumentException if neither "int" or "float" setters are found
+     */
+    public static MirrorAnimator animator(Object target, String property, int... values) {
+        if (getSetter(target, property, int.class).isPresent()) {
+            ObjectAnimator animator = ObjectAnimator.ofInt(target, property, values);
+            Keyframe firstFrame = Keyframe.ofInt(0, values[0]);
+            Keyframe lastFrame = Keyframe.ofInt(0, values[values.length - 1]);
+            return new MirrorObjectAnimator(animator, firstFrame, lastFrame);
+        } else {
+            float[] fvalues = new float[values.length];
+            for (int i = 0; i < fvalues.length; i++) {
+                fvalues[i] = values[i];
+            }
+            return animator(target, property, fvalues);
+        }
+    }
+
+    /**
+     *
+     * @param target the target object to be animated
+     * @param property the property to be animated
+     * @param values values to be animated on
+     * @return a MirrorAnimator
+     * @throws java.lang.IllegalArgumentException if the setter for the property isn't found
+     */
+    public static MirrorAnimator animator(Object target, String property, float... values) {
+        if (getSetter(target, property, float.class).isPresent()) {
+            ObjectAnimator animator = ObjectAnimator.ofFloat(target, property, values);
+            Keyframe firstFrame = Keyframe.ofFloat(0, values[0]);
+            Keyframe lastFrame = Keyframe.ofFloat(0, values[values.length - 1]);
+            return new MirrorObjectAnimator(animator, firstFrame, lastFrame);
+        } else {
+            String msg = String.format("Cannot create animator because the setter for %s(float) doesn't exist or not public.",
+                    property);
+            throw new IllegalArgumentException(msg);
+        }
+    }
+
+    public static void setInterpolator(Context context, Animator animator, int resId) {
+        Interpolator interpolator = AnimationUtils.loadInterpolator(context, resId);
+        animator.setInterpolator(interpolator);
+    }
+
+    static Optional<Method> getSetter(Object target, String propertyName, Class paramType) {
+        String setterName = "set" + capitalizeHead(propertyName);
+        try {
+            return Optional.of(target.getClass().getMethod(setterName, paramType));
+        } catch (NoSuchMethodException e) {
+            return Optional.absent();
+        }
+    }
+
+    private static String capitalizeHead(String propertyName) {
+        return propertyName.substring(0, 1).toUpperCase() + propertyName.substring(1);
+    }
+}
