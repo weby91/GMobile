@@ -53,7 +53,7 @@ public class LogInPageActivity extends AppCompatActivity implements OnClickListe
     Button btn_login;
     @InjectView(R.id.link_signup)
     TextView link_signup;
-    public String strUsername, strPassword, app_ver, cabang;
+    public String strUsername, strPassword, app_ver, cabang, status;
     public static boolean isCheckUser;
 
     // Progress Dialog
@@ -306,7 +306,9 @@ public class LogInPageActivity extends AppCompatActivity implements OnClickListe
                     role_cd = msg.getString("role_cd");
                     app_ver = msg.getString("app_v");
                     cabang = msg.getString("cabang");
+                    status = "1";
                     strErrorMsg = "Hi, " + nm_dpn;
+
                     saveToSharedPreferences(strUsername, strPassword, role_cd, app_ver, cabang);
                 }
                 if (!strJSONReturnMsg.equals("")){
@@ -345,7 +347,7 @@ public class LogInPageActivity extends AppCompatActivity implements OnClickListe
 
                 pDialog.dismiss();
                 Toast.makeText(LogInPageActivity.this, strErrorMsg, Toast.LENGTH_LONG).show();
-                if (strJSONReturnMsg.contains("success")) {
+                if (status.equals("1")) {
                     Intent i = new Intent(LogInPageActivity.this, MainActivity.class);
                     finish();
                     startActivity(i);

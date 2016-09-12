@@ -5,6 +5,9 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
 import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -104,9 +107,10 @@ public class myCore {
 
     //region ConnectToDB
     public static String connectToDB(String strMethod){
-        //"http://gkrgedongmobile.com/registration.php";
-        String LOGIN_URL = "http://gkrgedongmobile.com/" + strMethod + ".php";
-//        String LOGIN_URL = "http://192.168.1.105:7777/GKRMobile/" + strMethod + ".php";
+        String LOGIN_URL;
+            //"http://gkrgedongmobile.com/registration.php";
+            //String LOGIN_URL = "http://gkrgedongmobile.com/" + strMethod + ".php";
+            LOGIN_URL = "http://192.168.1.106:8888/GITHUB/GKRMobile/" + strMethod + ".php";
         return LOGIN_URL;
     }
     //endregion
